@@ -1,6 +1,6 @@
 # MikuDream UUID Uploader
 
-一个用于Leaves 1.21.5服务器的Java插件，负责将玩家UUID上传到phpMyAdmin数据库，并生成6位随机绑定码。
+一个用于Leaves 1.21服务器的Java插件，负责将玩家UUID上传到phpMyAdmin数据库，并生成6位随机绑定码。
 
 ## 功能特性
 
@@ -17,7 +17,7 @@
 
 ## 系统要求
 
-- **服务器版本**: Leaves 1.21.5
+- **服务器版本**: Leaves 1.21
 - **Java版本**: Java 17+
 - **数据库**: MySQL 5.7+ 或 MariaDB 10.2+
 - **phpMyAdmin**: 用于管理数据库
@@ -31,11 +31,11 @@ cd MikuDreamUUIDPlugin
 mvn clean package
 ```
 
-编译完成后，JAR文件将位于 `target/uuid-uploader-1.0.4.jar`
+编译完成后，JAR文件将位于 `target/uuid-uploader.jar`
 
 编译成功后，将在 `target/` 目录下生成：
-- `uuid-uploader-1.0.4.jar` - 可部署的插件JAR文件
-- `uuid-uploader-1.0.4-sources.jar` - 源代码JAR文件
+- `uuid-uploader.jar` - 可部署的插件JAR文件
+- `uuid-uploader-sources.jar` - 源代码JAR文件
 
 ### 2. 安装插件
 
@@ -54,12 +54,12 @@ mvn clean package
 ```yaml
 # 数据库配置
 database:
-  host: "server.memsyslizi.cn"
-  port: 887
-  database: "cysunk"
-  username: "cysunk"
-  password: "cysunk"
-  table: "player_uuids"
+  host: "your_host"
+  port: ''
+  database: "your_database"
+  username: "your_username"
+  password: "your_password"
+  table: "your_table"
   
 # 插件设置
 settings:
