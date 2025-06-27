@@ -2,11 +2,11 @@
 
 # 数据库配置
 database:
-  host: "154.12.55.98"
+  host: "your_host"
   port: 3306
-  database: "cysunk"
-  username: "cysunk"
-  password: "cysunk"
+  database: "your_database"
+  username: "your_username"
+  password: "your_password"
   table: your_table
   
 # 插件设置
